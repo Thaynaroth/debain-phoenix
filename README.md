@@ -5,7 +5,11 @@ This script will do as below:
 - Install Phoenix v1.17.8
 
 ```
-wget -O install-phoenix.sh "https://github.com/Thaynaroth/debain-phoenix/blob/main/install.sh"
+install wget if u didn't have it yet
+```
+apt install wget
+```
+wget -O install-phoenix.sh "https://raw.githubusercontent.com/Thaynaroth/debain-phoenix/refs/heads/main/install.sh"
 chmod +x install-phoenix.sh
 ./install-phoenix.sh
 rm install-phoenix.sh
