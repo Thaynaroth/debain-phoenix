@@ -1,10 +1,9 @@
 #!/bin/bash
 
-# update apt
 sudo apt update && upgrade -y
 
 # install dependencies need for building erlang
-sudo apt -y install build-essential autoconf m4 libncurses-dev \
+sudo apt -y install git build-essential autoconf m4 libncurses-dev \
 libwxgtk3.2-dev libwxgtk-webview3.2-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev \
 xsltproc fop libxml2-utils openjdk-17-jdk unzip
 
