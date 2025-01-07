@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # update apt
-apt update && upgrade -y
+sudo apt update && upgrade -y
 
 # install dependencies need for building erlang
-apt -y install build-essential autoconf m4 libncurses-dev \
+sudo apt -y install build-essential autoconf m4 libncurses-dev \
 libwxgtk3.2-dev libwxgtk-webview3.2-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev \
-xsltproc fop libxml2-utils openjdk-17-jdk wget unzip
+xsltproc fop libxml2-utils openjdk-17-jdk unzip
 
 # build erlang from source version 27
 git clone https://github.com/erlang/otp.git ~/otp-source
@@ -19,7 +19,7 @@ make install
 # install elixir 1.18.1
 wget https://github.com/elixir-lang/elixir/releases/download/v1.18.1/elixir-otp-27.zip
 unzip elixir-otp-27.zip -d $HOME/.elixir
-rm -f elixir-otp-27.zip
+rm elixir-otp-27.zip
 echo 'export PATH="$PATH:$HOME/.elixir/bin"' >> ~/.bashrc
 source ~/.bashrc
 
