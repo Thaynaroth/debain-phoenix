@@ -13,8 +13,8 @@ git clone https://github.com/erlang/otp.git ~/otp-source
 cd ~/otp-source
 git checkout maint-27
 ./configure
-make
-make install
+sudo make
+sudo make install
 
 # install elixir 1.18.1
 wget https://github.com/elixir-lang/elixir/releases/download/v1.18.1/elixir-otp-27.zip
