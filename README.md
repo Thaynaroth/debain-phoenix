@@ -1,8 +1,8 @@
-# Install Phoenix v1.17.8 on Debian 12 Bookworm
+# Install Phoenix v1.7.18 on Debian 12 Bookworm
 This script will do as below:
-- Build and install latest erlang OTP 27
-- Download Elixir 1.18.1 prebuild on OTP 27 and add path to variable
-- Install Phoenix v1.17.8
+- Build and install latest erlang OTP v27
+- Download Elixir v1.18.1 prebuild on OTP v27 and add path to variable
+- Install Phoenix v1.7.18
 
 Install wget if u didn't have it yet
 
