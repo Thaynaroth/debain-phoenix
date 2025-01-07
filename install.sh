@@ -27,3 +27,6 @@ source ~/.bashrc
 mix local.hex --force
 mix local.rebar --force
 mix archive.install hex phx_new --force
+
+#remove source directory
+sudo rm -rf otp-source
