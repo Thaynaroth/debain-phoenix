@@ -7,7 +7,7 @@ This script will do as below:
 Install wget if u didn't have it yet
 
 ```
-apt install wget
+sudo apt install wget
 ```
 Install script
 ```
